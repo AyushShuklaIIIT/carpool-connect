@@ -55,11 +55,6 @@ This project is deployed on **Vercel**. To deploy:
 
 ---
 
-## **📷 Screenshots**
-(Add images showcasing login, booking, and chat features)
-
----
-
 ## **🙌 Contributing**
 1. **Fork** the repo  
 2. Create a **new branch** (`git checkout -b feature-name`)  
