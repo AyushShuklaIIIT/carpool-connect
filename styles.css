@@ -1,0 +1,439 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+    font-family: 'Poppins', sans-serif;
+}
+
+.hero {
+    text-align: center;
+    padding: 50px 20px;
+    background: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.5)), url(image.jpg);
+    background-size: cover;
+    background-position: bottom;
+    color: white;
+    margin-bottom: 50px;
+}
+
+h1 {
+    font-size: 2.5rem;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+p {
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+}
+
+.hero button {
+    background: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    font-size: 1.2rem;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+.hero button:hover {
+    background: #0056b3;
+}
+
+form {
+    max-width: 400px;
+    margin: auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    background-color: #f9f9f9;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-bottom: 50px;
+}
+
+label {
+    display: block;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+input {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+form button {
+    width: 100%;
+    padding: 10px;
+    background: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 15px;
+    transition: background 0.3s ease;
+}
+
+form button:hover {
+    background: #0056b3;
+}
+
+.suggestions {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    border: 1px solid #ddd;
+    max-height: 150px;
+    overflow-y: auto;
+    background: #fff;
+    position: relative;
+    width: 100%;
+    z-index: 999;
+}
+
+.suggestions li {
+    padding: 8px;
+    cursor: pointer;
+}
+
+.suggestions li:hover {
+    background: #f0f0f0;
+}
+
+.how-it-works {
+    text-align: center;
+    padding: 50px 20px;
+    background: #f9f9f9;
+}
+
+.how-it-works h2 {
+    font-size: 2rem;
+    margin-bottom: 30px;
+}
+
+.steps {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.steps.in-view .step {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.step {
+    width: 300px;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    background-color: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    opacity: 0;
+    transform: translateY(30px);
+    transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+}
+
+.step:nth-child(1) {
+    transition-delay: 0.1s;
+}
+
+.step:nth-child(2) {
+    transition-delay: 0.2s;
+}
+
+.step:nth-child(3) {
+    transition-delay: 0.3s;
+}
+
+.step:nth-child(4) {
+    transition-delay: 0.4s;
+}
+
+.step i {
+    font-size: 2rem;
+    color: #007bff;
+    margin-bottom: 10px;
+}
+
+.step h3 {
+    font-size: 1.3rem;
+    margin-bottom: 5px;
+}
+
+.step p {
+    font-size: 1rem;
+    color: #555;
+}
+
+.benefits {
+    text-align: center;
+    padding: 50px 20px;
+    background: #f9f9f9;
+}
+
+.benefits h2 {
+    font-size: 2rem;
+    margin-bottom: 30px;
+}
+
+.benefits-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.benefit {
+    width: 250px;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    background-color: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    opacity: 0;
+    transform: translateY(30px);
+    transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+}
+
+.benefit:hover {
+    transform: translateY(-5px);
+}
+
+.benefits.in-view .benefit {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.benefit:nth-child(1) {
+    transition-delay: 0.1s;
+}
+
+.benefit:nth-child(2) {
+    transition-delay: 0.2s;
+}
+
+.benefit:nth-child(3) {
+    transition-delay: 0.3s;
+}
+
+.benefit:nth-child(4) {
+    transition-delay: 0.4s;
+}
+
+.benefit i {
+    font-size: 2rem;
+    color: #007bff; 
+    margin-bottom: 10px;
+}
+
+.benefit h3 {
+    font-size: 1.3rem;
+    margin-bottom: 5px;
+}
+
+.benefit p {
+    font-size: 1rem;
+    color: #555;    
+}
+
+.footer {
+    background: #222;
+    color: #fff;
+    padding: 40px 20px;
+    text-align: center;
+}
+
+.footer-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 40px;
+    margin: auto;
+    max-width: 1200px;
+}
+
+.footer-section {
+    max-width: 250px;
+}
+
+.footer-section h3 {
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+}
+
+.footer-section p {
+    font-size: 0.9rem;
+    color: #ccc;
+}
+
+.footer-section ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-section ul li {
+    margin: 5px 0;
+}
+
+.footer-section ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 0.9rem;
+}
+
+.footer-section ul li a:hover {
+    text-decoration: underline;
+}
+
+.social-icons a {
+    display: inline-block;
+    margin: 5px;
+    color: white;
+    font-size: 1.5rem;
+    transition: 0.3s;
+}
+
+.social-icons a:hover {
+    color: #007bff;
+}
+
+.footer-bottom {
+    margin-top: 20px;
+    border-top: 1px solid #444;
+    padding-top: 10px;
+    font-size: 0.9rem;
+    color: #aaa;
+}
+
+/* Results page CSS */
+
+.results {
+    padding: 40px 20px;
+    text-align: center;
+}
+
+.results h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+#ride-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.ride-card {
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 300px;
+    text-align: left;
+    transition: transform 0.3s ease-in-out; 
+}
+
+.ride-card:hover {
+    transform: scale(1.05);
+}
+
+.ride-card h3 {
+    font-size: 1.2rem;
+    margin-bottom: 5px;
+}
+
+.ride-card p {
+    font-size: 1rem;
+    color: #555;
+    margin: 5px 0;
+}
+
+.ride-card button {
+    background: #007bff;
+    color: white;
+    border: none;
+    padding: 10px;
+    width: 100%;
+    border-radius: 5px;
+    cursor: pointer;  
+}
+
+.ride-card button:hover {
+    background: #0056b3;
+}
+
+.hidden {
+    display: none;
+}
+
+#chatbox-section {
+    max-width: 400px;
+    position: fixed;
+    left: 0;
+    top: 400px;
+    background: #f5f5f5;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    z-index: 999;
+    transform: scale(0.5) translateX(-50%) translateY(50%);
+    transition: transform 0.3s ease-in-out;
+}
+
+#chatbox-section h2 {
+    text-align: center;
+    margin-bottom: 10px;
+    color: #007bff;
+    font-size: 2rem;
+}
+
+#chatbox-section:hover {
+    transform: scale(1);
+}
+
+#chat-box {
+    width: 300px;
+    height: 400px;
+    overflow-y: scroll;
+    border: 1px solid #ccc;
+    padding: 10px;
+}
+
+#message-input {
+    width: 80%;
+}
+
+#sign-up-button {
+    background: #007bff;
+    color: white;
+    border: none;
+    padding: 10px;
+    width: 100px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin: 10px 0;
+    text-align: center;
+}
+
+#send-btn {
+    background: #007bff;
+    color: white;
+    border: none;
+    padding: 10px;
+    width: 55.5px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin: 10px 0;
+    text-align: center;
+}

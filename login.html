@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Firebase Login</title>
+    <link rel="stylesheet" href="log.css">
+    <link rel="icon" type="image/x-icon" href="favicon.ico" />
+</head>
+<body>
+    <div class="container">
+        <div id="login-container">
+            <h2>Login</h2>
+            <input type="email" name="" id="login-email" placeholder="Email">
+            <input type="password" name="" id="login-password" placeholder="Password">
+            <button id="login-btn">Login</button>
+            <p id="register-link" class="para">Don't have an account? <span id="show-register" class="link">Register</span></p>
+        </div>
+
+        <div id="register-container" class="hidden">
+            <h2>Register</h2>
+            <input type="email" name="" id="register-email" placeholder="Email">
+            <input type="password" name="" id="register-password" placeholder="Password">
+            <button id="register-btn">Register</button>
+            <p id="register-link" class="para">Already have an account? <span id="show-login" class="link">Login</span></p>
+        </div>
+
+        <button id="logout-btn" class="hidden">Logout</button>
+    </div>
+    <script type="module" src="authentication.js"></script>
+</body>
+</html>
