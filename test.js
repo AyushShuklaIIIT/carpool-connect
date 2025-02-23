@@ -1,0 +1,1 @@
+console.log(window.ENV.FIREBASE_API_KEY);
