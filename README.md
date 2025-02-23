@@ -16,7 +16,7 @@ A **smart carpooling web application** that allows users to book rides, chat wit
 ## **🛠️ Tech Stack**
 - **Frontend:** HTML, CSS, JavaScript, Bootstrap  
 - **Backend:** Firebase Authentication & Firestore  
-- **Mapping API:** OpenStreetMap, OpenRouteService  
+- **Mapping API:** OpenRouteService, LocationIQ
 - **Hosting:** Vercel  
 
 ---
@@ -27,32 +27,6 @@ A **smart carpooling web application** that allows users to book rides, chat wit
 git clone https://github.com/your-username/your-repo.git
 cd your-repo
 ```
-
-### **2️⃣ Install Dependencies (if any)**
-```sh
-npm install
-```
-
-### **3️⃣ Set Up Firebase Configuration**
-- Create a `.env` file in the project root  
-- Add the following Firebase credentials:
-  ```
-  FIREBASE_API_KEY=your-api-key
-  FIREBASE_AUTH_DOMAIN=your-auth-domain
-  FIREBASE_PROJECT_ID=your-project-id
-  ```
-
-> ⚠️ **Ensure `.env` is added to `.gitignore` to keep credentials secure!**
-
----
-
-## **🚀 Deployment**
-This project is deployed on **Vercel**. To deploy:
-1. Push your project to **GitHub**  
-2. Go to **Vercel Dashboard** → Import your repository  
-3. Add environment variables under **Settings → Environment Variables**  
-4. Click **Deploy**  
-
 ---
 
 ## **🙌 Contributing**
