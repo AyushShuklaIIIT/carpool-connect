@@ -152,6 +152,16 @@ async function findMatchingRides(fromCoords, toCoords, id) {
   }
 }
 
+/**
+ * Filters rides based on proximity to the specified start and end coordinates.
+ *
+ * @param {Object} rides - An object containing ride details keyed by ride IDs.
+ * @param {Object} fromCoords - The starting coordinates to compare with ride origins.
+ * @param {Object} toCoords - The destination coordinates to compare with ride destinations.
+ * @param {string} id - The ID of the current ride to exclude from the results.
+ * @returns {Promise<Array>} - A promise that resolves to an array of rides that are within 5 km of the specified coordinates.
+ */
+
 async function filterRides(rides, fromCoords, toCoords, id) {
   const filteredRides = [];
 

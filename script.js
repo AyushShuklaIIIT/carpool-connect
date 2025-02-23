@@ -1,3 +1,7 @@
+/**
+ * Scrolls smoothly to the carpool form section on the page.
+ */
+
 const scrollToForm = () => {
     document.getElementById("carpool-form").scrollIntoView({ behavior: "smooth" });
 }
